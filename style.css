@@ -125,6 +125,23 @@ header {
     #educationPhoto
     {
         width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        
+        img{
+            width: 300px;
+            margin: 10px;
+            border-radius: 10%;
+            &:hover{
+                scale: 1.1;
+                border: 1px solid #331f5c;
+            }
+        }
     }
 
 
