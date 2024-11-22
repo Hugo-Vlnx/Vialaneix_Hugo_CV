@@ -22,18 +22,49 @@ a{
     color: #fff;
 }
 
-a:hover {
-    color: #717285;
-}
 header {
     padding: 10px;
     font-size: 24px;
     background-color: #000000;
     margin: 0px;
+    a{
+        &:hover{
+            color: #717285;
+        }
+    }
 }
+     
+      
 
 #navigation {
     display: flex;
     justify-content: space-around;
     font-family: "Oxanium", sans-serif;
+}
+
+footer {
+    background-color: #000000; 
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    margin-top: 0px;
+
+       #contact{
+           display: flex;
+           flex-wrap: wrap;
+           
+       }
+       i{
+        margin: 7px;
+          &:hover{
+           color: #717285;
+           text-decoration: underline;
+         }
+       }
+
+
+    
 }
