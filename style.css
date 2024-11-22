@@ -26,6 +26,10 @@ a{
     color: #fff;
     text-decoration: none;
 }
+p{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 header {
     padding: 10px;
@@ -159,14 +163,20 @@ header {
 #competences{
     width: 100%;
     color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     #diagramme{
-        width: 50%;
+        width: 40%;
+        padding: 10px;
         
        .competenceArrangement {
          padding: 10px;
          display: flex;
-         gap: 10em;
+         gap: 8em;
+         display: flex;
          flex-wrap: wrap;
+         justify-content: center;
         }
     
         .competenceStyle{
@@ -195,7 +205,48 @@ header {
          font-size: 1.2em;
         }
     }
+    #softSkills{
+        width: 50%;
+        padding: 10px;
+        
+               
+        #skillWrap{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            
+         .nomSkill{
+            width: 20%;
+            margin: 4%;
+            margin-top: 15%;
+         }
+           
+         .descriptionSkill{
+            width: 70%;
+            margin-top: 5%;
+            margin-left: 2%;
+            border-left: solid black;
+            padding-left: 30px;
+            margin-top: 15%;
+            display: flex;
+           flex-wrap: wrap;
+           word-wrap: break-word;
+           overflow-wrap: break-word;
+           align-self: flex-start;
+         }
+        }
+
+    }
     
+}
+
+#information{
+    width: 100%;
+    #loisir{
+        width: 50%;
+        
+    }
 }
 
 footer {
@@ -207,6 +258,7 @@ footer {
     padding: 10px;
     font-size: 24px;
     margin-top: 0px;
+    
 
        #contact{
            display: flex;
