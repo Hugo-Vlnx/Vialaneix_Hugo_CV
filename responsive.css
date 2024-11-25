@@ -1,0 +1,33 @@
+@media screen and (max-width:1300px)
+{
+    h1{
+        font-size: 17px;
+    }
+    h2{
+        font-size: 19px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    *{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:1050px){
+    .cercle{
+        width: 150px;
+        height: 150px;
+    }
+    #education,#competences,#information{
+        flex-direction: column;
+    }
+    #description,#educationPhoto,#diagramme,#softSkills,#loisir,#contactMoi{
+      width: 100%;
+    }
+    #softSkills,#loisir,#contactMoi{
+        width: 100%;
+    }
+    #contactMoi{
+        height: 200px;
+    }
+}

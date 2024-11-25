@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 * {
     margin: 0;
@@ -15,9 +15,13 @@ body {
     color: white;
     font-family: Arial, sans-serif;
     font-size: 15px;
+    background-color: #ebe4d9;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+
 }
 h2, h3{
     text-decoration: underline;
+    font-family: "Chakra Petch", sans-serif;
 }
 h3{
     font-size: 26px;
@@ -29,8 +33,9 @@ h1{
     font-size: 20px;
 }
 a{
-    color: #fff;
+    
     text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
 }
 p{
     display: flex;
@@ -58,6 +63,15 @@ header {
     display: flex;
     justify-content: space-around;
     font-family: "Oxanium", sans-serif;
+    a{
+        color: #fff;
+        transition: all 0.5s linear;
+        &:hover{
+            color: #7f6e42;
+            text-decoration: underline;
+            transform: scale(1.05);
+        }
+    }
 }
 
 #presentation{
@@ -106,8 +120,9 @@ header {
        padding: 5px;
        color: #7f6e42;
        &:hover{
-       color: #4a4027;
+       color: #958150;
        text-decoration: underline;
+       scale: 1.2;
      }
     }
     #poste{
@@ -147,6 +162,10 @@ header {
           flex-wrap: wrap;
           gap: 10px;
           list-style: none;
+            li{
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
         }
        }
     }
@@ -280,10 +299,90 @@ header {
 
 #information{
     width: 100%;
-    #loisir{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+    #loisir{ 
+        
+        color: #000000;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50%; 
+        a{
+        color: #000000;
+          }
+        #loisirWrap{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            
+         .nomLoisir{
+            width: 20%;
+            margin: 4%;
+            margin-top: 15%;
+         }
+           
+         .descriptionLoisir{
+            width: 60%;
+            margin-top: 5%;
+            margin-left: 2%;
+            border-left: solid black;
+            padding-left: 30px;
+            margin-top: 15%;
+            display: flex;
+           flex-wrap: wrap;
+           word-wrap: break-word;
+           overflow-wrap: break-word;
+           align-self: flex-start;
+         }
+        }
+
+    }
+    #contactMoi{
         width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./image/big-planet-space-art-4k-cm-3840x2160.jpg); 
+        background-size: cover; 
+        background-position-y: center;
+        background-position-x: center;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+        .contact-button {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            font-size: 23px;
+            border: 2px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 1s linear;
+            border-radius: 20%;
+            
+        
+        
+         &:hover {
+            background-color: #201347;
+            transform: scale(1.05);
+            border-radius: 40%;
+           }
+           a{
+            color: #7f6e42;
+           }
+        }
         
     }
+    
 }
 
 footer {
