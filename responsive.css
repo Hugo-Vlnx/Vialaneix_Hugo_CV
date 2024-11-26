@@ -15,22 +15,31 @@
 }
 @media screen and (max-width:1050px){
 
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     .cercle{
         width: 150px;
         height: 150px;
     }
     #education,#competences,#information{
+        display: flex;
         flex-direction: column;
         width : 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
     #description,#educationPhoto,#diagramme,#softSkills,#loisir,#contactMoi{
         width: 100%;
+        min-width: 100%;
+        max-width: 100%;
     }
-    #softSkills,#loisir,#contactMoi{
-        width: 100%;
-    }
+    
     #contactMoi{
-        height: 200px;
+        height: 40vh;
     }
 }
 
