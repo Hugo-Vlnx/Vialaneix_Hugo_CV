@@ -14,20 +14,35 @@
     }
 }
 @media screen and (max-width:1050px){
+
     .cercle{
         width: 150px;
         height: 150px;
     }
     #education,#competences,#information{
         flex-direction: column;
+        width : 100%;
     }
     #description,#educationPhoto,#diagramme,#softSkills,#loisir,#contactMoi{
-      width: 100%;
+        width: 100%;
     }
     #softSkills,#loisir,#contactMoi{
         width: 100%;
     }
     #contactMoi{
         height: 200px;
+    }
+}
+
+@media screen and (max-width:424px)
+{
+    header{
+        ul{
+            display : flex;
+            flex-direction: column;
+            li{
+                text-align : center;
+            }
+        }
     }
 }
